@@ -9,7 +9,7 @@
 
 ## 編集方法
 
-`index.html` の文章とイラストを編集してください。スタイルとSVG画像もこのファイルに含まれています。
+`index.html` の文章とイラストを編集してください。スタイルと作品のSVG画像はHTMLに含まれています。プロフィール画像は `assets/namakemono.jpeg` です。
 
 - ニックネーム：ナマケモノ🦥
 - 自己紹介：人間ですが、ナマケモノで活動中
@@ -25,4 +25,4 @@
 
 初回はリポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定します。
 
-現在は外部ファイルを必要としないHTMLのため、`index.html` だけを公開対象にしています。画像・CSSなどを別ファイルにした場合は、ワークフローの `Prepare static site` でそれらも `_site` へコピーしてください。
+`index.html` と `assets/` を公開対象にしています。
