@@ -55,11 +55,10 @@ footer{border-color:#a7d6de;color:#315f6c}
 .closing{margin-top:28px;margin-bottom:30px}.sea-note{padding-block:18px}
 }
 
-/* 実画像はトリミングせず、元の縦横比で全体を表示 */
-.work-media:has(img){display:flex;align-items:center;min-height:240px}
-.work-media img{width:100%;height:auto;max-height:none;object-fit:contain;background:#fff;box-shadow:0 3px 14px #07546b12}
-@media(max-width:600px){.work-media:has(img){min-height:0;padding:12px}.work-media img{border-radius:9px}}
-.work-media--portrait{justify-content:center}.work-media--portrait img{width:min(100%,280px);margin-inline:auto}
+/* 作品画像は同じ高さのステージ内に、縦横比を保って配置 */
+.work .work-media:has(img){height:300px;min-height:0;padding:22px;display:flex;align-items:center;justify-content:center}
+.work .work-media img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 4px 16px #07546b18;margin:0}
+@media(max-width:600px){.work .work-media:has(img){height:240px;padding:16px}}
 </style></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a>
 <div class="topline">OKINAWA · SEA · CAT · AI · NAMAKEMONO</div>
