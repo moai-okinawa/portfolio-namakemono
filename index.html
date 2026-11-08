@@ -8,6 +8,53 @@
 @media(max-width:850px){.wrap{width:calc(100% - 48px)}header{flex-direction:column;align-items:flex-start;gap:10px}nav{gap:10px 20px}.hero{gap:28px}.hero h1{font-size:32px}.about-grid{gap:30px;grid-template-columns:.7fr 1.3fr}.social-grid{grid-template-columns:1fr 1fr}.work-body{padding:24px}}
 @media(max-width:600px){body{font-size:14px}.wrap{width:calc(100% - 40px)}.topline{font-size:9px;padding-block:8px}.logo{font-size:19px}header{padding-block:20px}nav{font-size:11px;gap:4px 19px}nav a{min-height:34px;display:flex;align-items:center}.hero-shell{border-radius:0 0 30px 30px}.hero{display:flex;flex-direction:column;gap:34px;padding-block:30px 40px;align-items:stretch}.hero>div{display:contents}.hero .eyebrow{order:0;margin-bottom:0}.hero h1{order:1;font-size:clamp(27px,7.5vw,36px);line-height:1.65;margin-bottom:0}.eyebrow{font-size:9px;margin-bottom:15px}.hero-copy{font-size:14px;line-height:2.1}.hero-copy{order:3}.hero .pill{order:4;align-self:flex-start}.portrait{order:2;width:min(100%,360px);margin-inline:auto;transform:none;padding:9px}.hero .pill{margin-top:20px}.sea-note{font-size:9px;gap:7px;padding-block:17px}.section{padding-block:48px}.section-head{margin-bottom:26px}h2{font-size:25px}.about-grid,.works-grid,.two-column{grid-template-columns:1fr;gap:25px}.identity{position:static;padding:24px}.identity .sloth{font-size:36px;margin-bottom:9px}.bio p{margin-bottom:23px}.works-grid{gap:26px}.work-body{padding:24px 22px}.work h3{font-size:22px}.work-media{padding:16px}.media-slot{min-height:190px}.catch{font-size:17px}.work-copy{font-size:14px;line-height:2}.fineprint{font-size:11px;line-height:1.9}.roy{grid-template-columns:1fr}.roy .media-slot{min-height:190px}.note-placeholder,.learning,.future{padding:26px 22px}.learning h3,.future h3{font-size:21px}.future-path{gap:8px;font-size:12px}.future-path span{padding:8px 12px}.social-grid{gap:12px}.social{padding:18px;min-height:114px}.social strong{font-size:16px}.closing{padding:28px 20px;margin-bottom:40px}footer{font-size:10px;flex-wrap:wrap}.section-kicker{font-size:9px}.bio h3{font-size:20px;margin-bottom:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* 海と白砂 — 古宇利ビーチ写真はローカル素材として管理 */
+:root{--ocean-photo:url("assets/kouri-beach.webp");--ink:#07546b;--muted:#416673;--sea:#007d89;--aqua:#e4f8fa;--sand:#fff8ea;--coral:#ff8f9c;--line:#bce3e8;--pink:#dff1e8;--yellow:#fff0bd;--lavender:#ede8f7}
+body{background:linear-gradient(180deg,#e4f8fa 0%,#fff8ea 45%,#e4f8fa 100%)}
+.topline{background:#07546b}header{background:transparent}nav a:hover{color:#007681}
+.hero-shell{position:relative;isolation:isolate;background-color:#20b8c5;background-image:var(--ocean-photo,linear-gradient(175deg,#6edce5 0%,#20b8c5 32%,#00a6b2 57%,#a9edf0 77%,#fff8ea 94%));background-size:cover;background-position:center;border-radius:0 0 55% 4% / 0 0 5% 3%;overflow:hidden}
+.hero-shell::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#e4f8fa35,#ffffff00 75%);z-index:-1}
+.hero{gap:38px;padding-block:90px 75px;align-items:center}
+.hero>div{background:#fffdf3eb;border:1px solid #ffffffc4;border-radius:28px;padding:32px;box-shadow:0 15px 45px #07546b12}
+.hero h1{font-size:clamp(29px,3.25vw,40px);margin-bottom:22px;color:#07546b}
+.hero h1 .highlight{color:#007681}.hero h1 .keep{white-space:normal}
+.hero-copy{color:#234f5e}.eyebrow{color:#176573;font-size:10px}
+.portrait{background:#ffffffdf;border:1px solid #ffffffd9;box-shadow:0 22px 55px #07546b40;transform:none;padding:10px}
+.portrait figcaption{color:#245c6c}.pill{background:#007d89;box-shadow:0 4px 0 #07546b16}.pill:hover{background:#07546b;text-decoration:none}
+.sea-note{border:0;padding:24px 0;color:#285b68}
+.section{position:relative;padding:54px 40px;margin-block:20px 42px;border-radius:28px;background:#fffdf8e8;box-shadow:0 8px 26px #07546b05}
+.section+.section{border-top:0}
+#about,#writing,#doing,#links{background:var(--sand)}
+#works,#ai,#future{background:#e4f8fa}
+.section-head{border-left:4px solid #20b8c5;padding-left:18px}
+.section-kicker{color:#136576}.identity{background:#e1f4f0;border:1px solid #c4e9e3}
+.work{border-color:#c2e2e7;box-shadow:0 9px 25px #07546b08;background:#ffffffed}
+.work-media{background:#cfedf7}.work:nth-child(2) .work-media{background:#dff1e2}.work:nth-child(3) .work-media{background:#fff0bd}.work:nth-child(4) .work-media{background:#ede8f7}
+.work:nth-child(2) .status{background:#e1f1e3;color:#326442}.work:nth-child(3) .status{background:#fff0bd;color:#6c541a}.work:nth-child(4) .status{background:#ede8f7;color:#665182}
+.media-slot{border-color:#4d7e8b70}.work-body{padding:28px 25px}.fineprint{background:#eff7f7;color:#385e6a}
+.catch{color:#006f7d}.note-placeholder{background:#ffffffb5;border-color:#adcdd2}.roy{background:#ffffffd9}.roy .work-media{background:#dceff5}
+.learning{background:#ffffffc9;border:1px solid #f0e3cb}.learning .chips span{background:#e4f8fa}
+.future{background:#ffffffc9;border:1px solid #b6e4e9}.future-label{background:#d6f3f3;color:#07546b}
+.social{background:#ffffffed}.social.pending{background:#fffdf6}.closing{background:linear-gradient(120deg,#b9edf0,#e4f8fa 55%,#fff8ea);border:1px solid #c1e6e9;color:#07546b}
+footer{border-color:#a7d6de;color:#315f6c}
+@media(max-width:850px){.section{padding:42px 26px}.hero{gap:26px}.hero>div{padding:26px}.hero h1{font-size:30px}.about-grid{gap:26px}}
+@media(max-width:600px){
+.hero-shell{--ocean-photo:url("assets/kouri-beach-mobile.webp");background-position:center top;background-size:auto 780px;background-repeat:no-repeat;border-radius:0 0 28px 28px;background-color:#a8e7e9}
+.hero-shell::before{background:linear-gradient(180deg,#e4f8fa00 0%,#e4f8fa12 52%,#e4f8fa 100%)}
+.hero{gap:23px;padding-block:28px 32px}
+.hero>div{display:contents}
+.hero .eyebrow{font-size:8px;order:0;background:#fffdf3f0;border-radius:20px;padding:8px 12px;align-self:flex-start;box-shadow:0 2px 12px #07546b0a}
+.hero h1{order:1;font-size:clamp(25px,7.2vw,32px);line-height:1.65;background:#fffdf3ed;padding:18px 20px;border-radius:22px;margin-bottom:0;box-shadow:0 8px 26px #07546b10}
+.hero h1 .keep{white-space:nowrap}
+.portrait{order:2;width:min(100%,360px);background:#fffffff2;padding:9px;box-shadow:0 14px 36px #07546b25}
+.hero-copy{order:3;background:#fffdf3ed;border:1px solid #ffffffd9;border-radius:22px;padding:24px 22px;color:#234f5e;line-height:2.05}
+.hero .pill{order:4;margin-top:0}.hero-copy p:last-child{margin-bottom:0}
+.section{padding:32px 20px;margin-block:14px 25px;border-radius:22px}.section-head{padding-left:12px;border-left-width:3px}h2{font-size:24px}
+.work-body{padding:24px 20px}.work-media{padding:14px}.work h3{font-size:20px}.catch{font-size:16px}.work-copy{font-size:14px}
+.works-grid{gap:22px}.identity{padding:23px}.learning,.future,.note-placeholder{padding:22px 19px}.social{padding:16px 13px}.social strong{font-size:15px}.social-grid{gap:10px}
+.closing{margin-top:28px;margin-bottom:30px}.sea-note{padding-block:18px}
+}
+
 </style></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a>
 <div class="topline">OKINAWA · SEA · CAT · AI · NAMAKEMONO</div>
