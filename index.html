@@ -55,6 +55,10 @@ footer{border-color:#a7d6de;color:#315f6c}
 .closing{margin-top:28px;margin-bottom:30px}.sea-note{padding-block:18px}
 }
 
+/* 実画像はトリミングせず、元の縦横比で全体を表示 */
+.work-media:has(img){display:flex;align-items:center;min-height:240px}
+.work-media img{width:100%;height:auto;max-height:none;object-fit:contain;background:#fff;box-shadow:0 3px 14px #07546b12}
+@media(max-width:600px){.work-media:has(img){min-height:0;padding:12px}.work-media img{border-radius:9px}}
 </style></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a>
 <div class="topline">OKINAWA · SEA · CAT · AI · NAMAKEMONO</div>
@@ -83,7 +87,7 @@ footer{border-color:#a7d6de;color:#315f6c}
 <section class="section" id="works"><div class="section-head"><div class="section-kicker">02 / MADE WITH AI & CURIOSITY</div><h2>作ったもの</h2></div><p class="section-intro">「あったらいいな」から生まれた、4つの作品<br>公開中のものも、これから育てるものも</p><div class="works-grid"><article class="work" id="umidoki" aria-labelledby="umidoki-title">
 <figure class="work-media" aria-label="海ドキ｜UMIDOKI?♥の画像掲載スペース">
 <!-- SCREENSHOT: umidoki — このdivをimgに差し替える 手順はREADME参照 -->
-<div class="media-slot"><span aria-hidden="true">🌊</span><strong>スクリーンショット追加待ち</strong><small>海ドキ｜UMIDOKI?♥</small></div></figure>
+<img src="assets/umidoki-screenshot.webp" width="1600" height="885" alt="海ドキのトップ画面と海遊びのおすすめ情報" loading="lazy" decoding="async"></figure>
 <div class="work-body"><span class="status">一般公開中</span><h3 id="umidoki-title">🌊 海ドキ｜UMIDOKI?♥</h3><p class="catch">今日どこの海？</p><div class="work-copy"><p>沖縄の海が大好きなナマケモノが作った、海遊びのお助けアプリ</p>
 <p>天気・風・波・潮位・防災情報をまとめてチェック！</p>
 <p>4つの海を比較して、今日の海選びをお手伝いします</p>
@@ -92,7 +96,7 @@ footer{border-color:#a7d6de;color:#315f6c}
 <article class="work" id="shimaima" aria-labelledby="shimaima-title">
 <figure class="work-media" aria-label="しまイマの画像掲載スペース">
 <!-- SCREENSHOT: shimaima — このdivをimgに差し替える 手順はREADME参照 -->
-<div class="media-slot"><span aria-hidden="true">🌺</span><strong>スクリーンショット追加待ち</strong><small>しまイマ</small></div></figure>
+<img src="assets/shimaima-screenshot.webp" width="1600" height="624" alt="しまイマのトップ画面と沖縄の自然を描いたビジュアル" loading="lazy" decoding="async"></figure>
 <div class="work-body"><span class="status">Ver.0.1・限定公開中</span><h3 id="shimaima-title">🌺 しまイマ</h3><p class="catch">今日の沖縄を、ひとつに</p><div class="work-copy"><p>沖縄の空、太陽、月、潮、旧暦、行事、イベント</p>
 <p>あちこち調べるのは、ちょっとめんどくさい🦥</p>
 <p>だったら、ひとつにまとめちゃおう！</p>
@@ -103,7 +107,7 @@ footer{border-color:#a7d6de;color:#315f6c}
 <article class="work" id="mochi" aria-labelledby="mochi-title">
 <figure class="work-media" aria-label="MŌCHI!｜モ〜チッの画像掲載スペース">
 <!-- SCREENSHOT: mochi — このdivをimgに差し替える 手順はREADME参照 -->
-<div class="media-slot"><span aria-hidden="true">🍡</span><strong>スクリーンショット追加待ち</strong><small>MŌCHI!｜モ〜チッ</small></div></figure>
+<img src="assets/mochi-screenshot.webp" width="1600" height="948" alt="MŌCHI!の注文受付画面と未入力の注文フォーム" loading="lazy" decoding="async"></figure>
 <div class="work-body"><span class="status">開発中</span><h3 id="mochi-title">🍡 MŌCHI!｜モ〜チッ</h3><p class="catch">餅屋の「めんどくさい」を、もっとラクに！</p><div class="work-copy"><p>きっかけは、職場のちょっとした困りごと</p>
 <p>注文を受けて、内容を確認して、現場に伝えて……</p>
 <p>「これ、もっとスムーズにできない？」</p>
