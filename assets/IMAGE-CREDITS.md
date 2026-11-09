@@ -28,7 +28,7 @@ EXIFなどの撮影メタデータは出力に引き継がず、色や内容の�
 
 - umidoki-screenshot.webp: 提供されたスクリーンショット 2026-11-08 13.47.29.png
   - 提供画像全体をそのままWebPへ変換、トリミングなし
-- shimaima-screenshot.webp: スクリーンショット 2026-11-08 13.51.22.png
+- shimaima-screenshot.webp: 提供されたスクリーンショット 2026-11-09 19.48.03.png
   - 既にアプリ画面のみの画像を使用
 - mochi-screenshot.webp: スクリーンショット 2026-11-08 13.55.15.png
   - 操作確認用・未入力のフォーム画面を使用
