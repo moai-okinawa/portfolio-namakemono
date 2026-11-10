@@ -60,6 +60,22 @@ footer{border-color:#a7d6de;color:#315f6c}
 .work .work-media img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 4px 16px #07546b18;margin:0}
 @media(max-width:600px){.work .work-media:has(img){height:240px;padding:16px}}
 .roy .work-media img{display:block;width:100%;height:auto;object-fit:contain;border-radius:14px}
+
+/* PCでは行ごとに文章・操作・注意書きの開始位置を共有する */
+@media(min-width:901px){
+.works-grid{align-items:stretch}
+.work{display:grid;grid-template-rows:subgrid;grid-row:span 7;row-gap:0}
+.work-body{display:contents}
+.work>.work-media{grid-row:1}
+.work-body>.status{grid-row:2;justify-self:start;align-self:start;margin:28px 25px 14px}
+.work-body>h3{grid-row:3;margin:0 25px 15px}
+.work-body>.catch{grid-row:4;margin:0 25px 22px}
+.work-body>.work-copy{grid-row:5;margin:0 25px}
+.work-copy p{min-height:2lh}
+.work-body>.pill{grid-row:6;justify-self:start;align-self:start;margin:9px 25px 0}
+.work-body>.fineprint{grid-row:7;margin:23px 25px 28px}
+}
+@media(min-width:601px) and (max-width:900px){.works-grid{grid-template-columns:1fr}}
 </style></head>
 <body id="top"><a class="skip" href="#main">本文へ移動</a>
 <div class="topline">OKINAWA · SEA · CAT · AI · NAMAKEMONO</div>
