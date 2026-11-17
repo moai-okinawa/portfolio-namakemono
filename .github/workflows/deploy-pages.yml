@@ -34,6 +34,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/index.html
           cp -R assets _site/assets
+          cp -R black-namake _site/black-namake
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
